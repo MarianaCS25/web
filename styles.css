@@ -1,0 +1,270 @@
+body {
+    font-family: 'Glory';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/fondo ham.png");
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat:repeat; 
+    min-height: 100vh;
+}
+
+header {
+    font-family: 'Yanone Kaffeesatz';
+    background: #731702;
+    color: #fff;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 90%;
+    min-width: 20%;
+}
+
+.menu {
+  background-color: #733A2D ;
+  text-align: center;
+  padding-right: 65px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  flex: 1;
+  max-width: 200px;
+  border-right: 5px solid #5D7A8C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li:last-child {
+  border-right: none;
+}
+
+.menu a {
+  display: flex;
+  padding: 0;
+  text-decoration: none;
+  color: #D98B84;
+  font-size: 1.71rem;
+  padding-right: 25px;
+}
+
+.menu a:hover {
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contenedor-imagenes {
+  display: flex; 
+  justify-content: center; 
+  gap: 100px;
+  flex-wrap: wrap;
+  max-width: 1200px; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contenedor-imagenes img {
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  object-fit: cover; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-imagenes img:hover {
+  transform: scale(1.2);
+}
+
+main {
+    padding: 10px;
+}
+
+.principal {
+    font-family: 'Cherry Bomb One Regular';
+    font-size: 45px;
+    color: #5D7A8C;
+    text-align: center;
+    margin: 50px 50px;
+    align-items: center;   
+}
+
+
+.intro {
+    font-family: 'Glory';
+    font-size: 20px;
+    color: #733A2D ;
+    text-align: justify;
+    background-color: #D98B84;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 70px 50px;
+}
+
+footer {
+  background-color: #5c1812;
+  color: #D98B84; 
+  font-family: 'Yanone Kaffeesatz';
+  padding: 1px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 5px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #D98B84;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff; 
+}
+
+i {
+  margin-right: 1px;
+}
+
+/* Iconos de redes sociales */
+.footer-section p i {
+  font-size: 1.1rem;
+  color: #D98B84;
+  vertical-align: middle;
+}
+
+/* Copyright */
+.privacy p {
+  font-size: 1.2rem;
+}
+
+
+/* Estilos responsivos menu*/
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  .menu li {
+    border-right: none;
+    border-bottom: 5px solid #5D7A8C;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  .menu a {
+    padding-left: 30px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsividad para pantallas pequeñas img*/
+@media (max-width: 768px) {
+  .contenedor-imagenes {
+    gap: 10px; 
+  }
+  .contenedor-imagenes img {
+    max-width: 100%;
+  }
+}
+
+/* Media Query para tabletas (pantallas entre 481px y 768px) */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  .principal {
+    line-height: 1; /* Espaciado compacto pero legible */
+    max-width: 95%; /* Texto casi de borde a borde */
+    margin: 15px auto;
+}
+
+.intro {
+    font-size: 17px;
+    line-height: 1.3; /* Espaciado compacto pero legible */
+    max-width: 95%; /* Texto casi de borde a borde */
+    margin: 15px auto;
+}
+}
+
+/* Media Query para celulares (pantallas de hasta 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Reduce el tamaño del texto global */
+  }
+  main {
+    padding: 10px;
+  }
+
+  .principal {
+    font-size: 35px;
+    line-height: 1; /* Espaciado compacto pero legible */
+    max-width: 95%; /* Texto casi de borde a borde */
+    margin: 15px auto;
+}
+
+.intro {
+    font-size: 17px;
+    line-height: 1.3; /* Espaciado compacto pero legible */
+    max-width: 95%; /* Texto casi de borde a borde */
+    margin: 15px auto;
+}
+}
+
+@font-face {
+  font-family: 'Glory';
+  src: url(fuentes/static/Glory-Regular.ttf);
+}  
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url(fuentes/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Cherry Bomb One Regular';
+  src: url(fuentes/Cherry_Bomb_One/CherryBombOne-Regular.ttf)
+}
